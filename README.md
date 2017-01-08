@@ -26,13 +26,15 @@ var path =    require('path')
 
 ### Usage
 
+##### Install
+
 `npm install gulp gulp-align --save-dev`
 
-##### in your `gulpfile.js`
+##### In your `gulpfile.js`
 
 ```
 gulp.task('align', function () {
-    gulp.src('./src/example.js')
+    return gulp.src('./src/example.js')
         .pipe(align())
         .pipe(gulp.dest('./dist'))
 })
